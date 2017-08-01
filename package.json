@@ -1,0 +1,26 @@
+{
+  "name": "i18n-assist",
+  "version": "0.1.0",
+  "description": "Script to collect translation strings and then put them back",
+  "main": "reverse.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OpusCapita/i18n-assist.git"
+  },
+  "author": "Mayank Agarwal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OpusCapita/i18n-assist/issues"
+  },
+  "homepage": "https://github.com/OpusCapita/i18n-assist#readme",
+  "dependencies": {
+    "excel-as-json": "^2.0.1",
+    "filewalker": "^0.1.3",
+    "msexcel-builder": "0.0.2",
+    "underscore": "^1.8.3",
+    "write": "^1.0.3"
+  }
+}
