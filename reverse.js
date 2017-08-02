@@ -8,7 +8,7 @@ var writeFile = require('write');
 
 convertExcel('translations.xlsx', null, {isColOriented: true, omitEmptyFields: true}, (err, data)=> {
 	let string = "";
-
+	//Put back english strings
 	for(let folder in data[0]){
 		if(folder != 'Path to file'){
 			for(let obj in data[0][folder]){
@@ -19,7 +19,7 @@ convertExcel('translations.xlsx', null, {isColOriented: true, omitEmptyFields: t
 			});
 		}
 	}
-
+	//Put back german strings
 	for(let folder in data[1]){
 		if(folder != 'Path to file'){
 			for(let obj in data[1][folder]){

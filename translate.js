@@ -4,7 +4,7 @@
  */
 
 var filewalker = require('filewalker');
-//var writeJsonFile = require('write-json-file');
+var writeJsonFile = require('write-json-file');
 var excelbuilder = require('msexcel-builder');
 var _ = require('underscore');
 var translationFiles = [];
