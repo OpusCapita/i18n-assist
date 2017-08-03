@@ -9,7 +9,8 @@ The excel has 3 columns,
 | Path to file | English translation | German translation |
 | ------------ | ------------------- | ------------------ |
 
-NOTE: DO NOT MODIFY THE 'PATH TO FILE' COLUMN. 
+**NOTE: DO NOT MODIFY THE 'PATH TO FILE' COLUMN.** 
+
 This is needed to put back the strings in the correct files.
 
 ### Put back the strings
