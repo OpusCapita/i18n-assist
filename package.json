@@ -1,6 +1,6 @@
 {
   "name": "ocbesbn-i18n-assist",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "OpusCapita Script to collect translation strings and then put them back",
   "main": "translate.js",
   "scripts": {
@@ -8,7 +8,9 @@
     "reverse": "node reverse.js"
   },
   "babel": {
-    "presets": ["es2015"]
+    "presets": [
+      "es2015"
+    ]
   },
   "repository": {
     "type": "git",
