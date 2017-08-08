@@ -4,12 +4,11 @@
  */
 
 var filewalker = require('filewalker');
-var writeJsonFile = require('write-json-file');
 var excelbuilder = require('msexcel-builder');
 var _ = require('underscore');
 var translationFiles = [];
 var arr = {};
-
+var args = process.argv.slice(2);
 
 /* Traverse through directory and get paths of all translation files */
 filewalker('./src/client/components')

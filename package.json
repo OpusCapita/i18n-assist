@@ -25,9 +25,7 @@
     "filewalker": "^0.1.3",
     "msexcel-builder": "0.0.2",
     "underscore": "^1.8.3",
-    "write": "^1.0.3"
-  },
-  "devDependencies": {
+    "write": "^1.0.3",
     "babel-cli": "^6.24.1",
     "babel-preset-es2015": "^6.24.1"
   }
