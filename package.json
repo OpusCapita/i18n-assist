@@ -4,8 +4,10 @@
   "description": "OpusCapita Script to collect translation strings and then put them back",
   "main": "translate.js",
   "scripts": {
-    "translate": "babel-node --presets es2015 translate.js",
-    "reverse": "node reverse.js"
+    "build": "babel source --presets babel-preset-es2015 --out-dir distribution",
+    "prepublish": "npm run build",
+    "translate": "node distribution/translate.js",
+    "reverse": "node distribution/reverse.js"
   },
   "babel": {
     "presets": [
@@ -23,11 +25,16 @@
   },
   "homepage": "https://github.com/OpusCapita/i18n-assist#readme",
   "dependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "commander": "^2.11.0",
     "excel-as-json": "^2.0.1",
     "filewalker": "^0.1.3",
     "msexcel-builder": "0.0.2",
     "underscore": "^1.8.3",
-    "write": "^1.0.3",
+    "write": "^1.0.3"
+  },
+  "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-preset-es2015": "^6.24.1"
   }
