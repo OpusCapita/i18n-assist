@@ -1,0 +1,14 @@
+machine:
+  node:
+    version: "6.10.2"
+  environment:
+    PATH: "${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
+
+deployment:
+  master:
+    branch: master
+    commands:
+      - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+      - git config --global user.name "CI"
+      - git config --global user.email "ci@opuscapita.com"
+      - npm run release

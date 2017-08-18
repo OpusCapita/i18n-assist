@@ -7,7 +7,8 @@
     "build": "babel source --presets babel-preset-es2015 --out-dir distribution",
     "prepublish": "npm run build",
     "translate": "node distribution/translate.js",
-    "reverse": "node distribution/reverse.js"
+    "reverse": "node distribution/reverse.js",
+    "release": "release-it --non-interactive --npm.publish --github.release --force --src.commitMessage=\"Release %s [ci skip]\""
   },
   "babel": {
     "presets": [
